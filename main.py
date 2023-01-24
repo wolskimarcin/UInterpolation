@@ -16,7 +16,7 @@ class MainApp(tk.Tk):
         self.ax = None
         self.fig = None
         self.method_var = None
-        self.title("Interpolation Visualization")
+        self.title("UInterpolation")
         self.geometry("800x600")
 
         # Create and set up the main container frame
@@ -48,7 +48,7 @@ class MainApp(tk.Tk):
                                                    command=self.set_interpolation_method_akima_spline)
         self.interpolation_method_menu.add_command(label="Cubic spline", command=self.set_interpolation_method_spline)
         self.interpolation_method_menu.add_command(label="PCHIP",
-                                                   command=self.set_interpolation_method_numerical_differentiation)
+                                                   command=self.set_interpolation_method_pchip)
         self.menubar.add_cascade(label="Interpolation Method", menu=self.interpolation_method_menu)
 
         # Create and set up the new input frame
@@ -106,7 +106,7 @@ class MainApp(tk.Tk):
     def set_interpolation_method_spline(self):
         self.method_var.set("Cubic spline")
 
-    def set_interpolation_method_numerical_differentiation(self):
+    def set_interpolation_method_pchip(self):
         self.method_var.set("PCHIP")
 
     def browse(self):
