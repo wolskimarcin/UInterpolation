@@ -10,6 +10,10 @@ UInterpolation supports the following interpolation methods:
 - Cubic Spline
 - Piecewise Cubic Hermite Interpolating Polynomial (PCHIP)
 
+
+![uinterpolator](https://github.com/wolskimarcin/UInterpolation/assets/103077297/e941fa6c-e0a3-4d35-b1ca-a6bc6c47fff0)
+
+
 ## Prerequisites
 
 The following packages must be installed in order to use the application:
